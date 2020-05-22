@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acr-na-tMn">
-                                        <rect key="frame" x="50" y="438" width="275" height="50"/>
+                                        <rect key="frame" x="50" y="429" width="275" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="DNL-Z4-fny"/>
@@ -44,10 +44,14 @@
                                         <state key="normal" title="Iniciar Sesión">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="gcW-u3-2d2" kind="show" id="BmI-8W-TuI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbl-Pp-tjA">
-                                        <rect key="frame" x="50" y="550" width="275" height="30"/>
-                                        <state key="normal" title="Button">
+                                        <rect key="frame" x="50" y="541" width="275" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Registro">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -87,16 +91,59 @@
             </objects>
             <point key="canvasLocation" x="-431.19999999999999" y="178.56071964017991"/>
         </scene>
-        <!--View Controller-->
+        <!--Iniciar Sesión-->
         <scene sceneID="J3e-fd-52Q">
             <objects>
                 <viewController id="gcW-u3-2d2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmE-aS-9J8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VUq-fR-JWH">
+                                <rect key="frame" x="20" y="124.5" width="335" height="138"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9L-Ke-e4C">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-IH-dZJ">
+                                        <rect key="frame" x="0.0" y="44" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgm-Mz-Jfk">
+                                        <rect key="frame" x="0.0" y="88" width="335" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cKO-bv-z3c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Iniciar Sesión">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="sdt-Bt-FIX">
+                                <rect key="frame" x="0.0" y="542" width="375" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="pXk-gM-fyi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WUj-D4-NHo" firstAttribute="trailing" secondItem="VUq-fR-JWH" secondAttribute="trailing" constant="20" id="QVF-BB-KT7"/>
+                            <constraint firstItem="sdt-Bt-FIX" firstAttribute="trailing" secondItem="WUj-D4-NHo" secondAttribute="trailing" id="QXg-VF-tTt"/>
+                            <constraint firstItem="sdt-Bt-FIX" firstAttribute="bottom" secondItem="WUj-D4-NHo" secondAttribute="bottom" id="UTT-W8-giT"/>
+                            <constraint firstItem="VUq-fR-JWH" firstAttribute="leading" secondItem="WUj-D4-NHo" secondAttribute="leading" constant="20" id="ZEt-Pq-7gS"/>
+                            <constraint firstItem="sdt-Bt-FIX" firstAttribute="leading" secondItem="WUj-D4-NHo" secondAttribute="leading" id="oFN-M4-gZb"/>
+                            <constraint firstItem="VUq-fR-JWH" firstAttribute="top" secondItem="WUj-D4-NHo" secondAttribute="top" constant="20" id="wq4-Z8-LZE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WUj-D4-NHo"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Iniciar Sesión" id="TIP-gQ-V2A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kua-6d-2eD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,6 +184,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bottomImage" width="351.5" height="123"/>
         <image name="loginBg" width="640" height="425"/>
     </resources>
 </document>
