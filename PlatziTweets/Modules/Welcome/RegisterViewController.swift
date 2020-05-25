@@ -9,8 +9,11 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    // MARK: - Outlets
 
     @IBOutlet weak var registerButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      setupUI()

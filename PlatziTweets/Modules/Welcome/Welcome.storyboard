@@ -128,6 +128,9 @@
                                         <state key="normal" title="Iniciar Sesión">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonAction" destination="gcW-u3-2d2" eventType="touchUpInside" id="9dl-4C-ra5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -151,7 +154,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Sesión" id="TIP-gQ-V2A"/>
                     <connections>
+                        <outlet property="emailTextField" destination="d9L-Ke-e4C" id="q6w-jj-qBg"/>
                         <outlet property="loginButton" destination="Bgm-Mz-Jfk" id="Akr-cu-LBT"/>
+                        <outlet property="passwordTextField" destination="Md1-IH-dZJ" id="AOj-3i-fXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kua-6d-2eD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -227,7 +232,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uZM-M0-gLH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SNT-cu-Taq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
