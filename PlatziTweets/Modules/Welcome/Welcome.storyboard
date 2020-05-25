@@ -157,11 +157,12 @@
                         <outlet property="emailTextField" destination="d9L-Ke-e4C" id="q6w-jj-qBg"/>
                         <outlet property="loginButton" destination="Bgm-Mz-Jfk" id="Akr-cu-LBT"/>
                         <outlet property="passwordTextField" destination="Md1-IH-dZJ" id="AOj-3i-fXj"/>
+                        <segue destination="nyE-St-HOR" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="BCU-Ex-dCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kua-6d-2eD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="-81"/>
+            <point key="canvasLocation" x="566" y="-284"/>
         </scene>
         <!--Registro-->
         <scene sceneID="tFy-y7-AC6">
@@ -199,6 +200,9 @@
                                         <state key="normal" title="Registro">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonAction" destination="DBO-OA-f8k" eventType="touchUpInside" id="Nbq-Sy-ewD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -219,12 +223,24 @@
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="LCI-h5-C3f"/>
                     <connections>
+                        <outlet property="emailTextField" destination="Srb-fa-Z6G" id="c4H-AE-wmp"/>
+                        <outlet property="namesTextField" destination="L9Z-DZ-WpS" id="jZr-i6-jc0"/>
+                        <outlet property="passwordTextField" destination="LOH-Wh-end" id="WRd-Rc-R6G"/>
                         <outlet property="registerButton" destination="Erh-AT-VL1" id="Uni-0w-IgD"/>
+                        <segue destination="nyE-St-HOR" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="AJt-zr-h3L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMK-Aw-J7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="588"/>
+            <point key="canvasLocation" x="604" y="663"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="MTn-Zg-io1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="nyE-St-HOR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2AT-sZ-eWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="178"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hnm-y8-NjY">
@@ -232,7 +248,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uZM-M0-gLH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SNT-cu-Taq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -245,6 +261,9 @@
             <point key="canvasLocation" x="-1370.4000000000001" y="178.56071964017991"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BCU-Ex-dCx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bottomImage" width="351.5" height="123"/>
         <image name="loginBg" width="640" height="425"/>
