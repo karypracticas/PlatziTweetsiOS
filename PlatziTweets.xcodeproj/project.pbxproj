@@ -12,6 +12,9 @@
 		425734E52460D156009DD590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425734E42460D156009DD590 /* Assets.xcassets */; };
 		425734E82460D156009DD590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425734E62460D156009DD590 /* LaunchScreen.storyboard */; };
 		42FE3D11247846C100175BDC /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FE3D10247846C100175BDC /* Welcome.storyboard */; };
+		42FE3D13247C3C6500175BDC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D12247C3C6500175BDC /* WelcomeViewController.swift */; };
+		42FE3D15247C3C9100175BDC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D14247C3C9100175BDC /* LoginViewController.swift */; };
+		42FE3D17247C3C9C00175BDC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D16247C3C9C00175BDC /* RegisterViewController.swift */; };
 		480813953597F0084001FED1 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33396985FECE9AEDF8DC63 /* Pods_PlatziTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		425734E72460D156009DD590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425734E92460D156009DD590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42FE3D10247846C100175BDC /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		42FE3D12247C3C6500175BDC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		42FE3D14247C3C9100175BDC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		42FE3D16247C3C9C00175BDC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5B53A0C9F25F4D71B43BCC14 /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
 		6A33396985FECE9AEDF8DC63 /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF5FBF77CE420588BC59B8E /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				42FE3D10247846C100175BDC /* Welcome.storyboard */,
+				42FE3D12247C3C6500175BDC /* WelcomeViewController.swift */,
+				42FE3D14247C3C9100175BDC /* LoginViewController.swift */,
+				42FE3D16247C3C9C00175BDC /* RegisterViewController.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -227,6 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FE3D15247C3C9100175BDC /* LoginViewController.swift in Sources */,
+				42FE3D17247C3C9C00175BDC /* RegisterViewController.swift in Sources */,
+				42FE3D13247C3C6500175BDC /* WelcomeViewController.swift in Sources */,
 				425734E02460D151009DD590 /* ViewController.swift in Sources */,
 				425734DC2460D151009DD590 /* AppDelegate.swift in Sources */,
 			);

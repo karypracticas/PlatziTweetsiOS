@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="STU-nX-pGo">
             <objects>
-                <viewController id="llQ-wY-PSP" sceneMemberID="viewController">
+                <viewController id="llQ-wY-PSP" customClass="WelcomeViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="93i-ks-wMI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +89,9 @@
                         <viewLayoutGuide key="safeArea" id="o0S-IT-b1E"/>
                     </view>
                     <navigationItem key="navigationItem" id="5iA-z1-br0"/>
+                    <connections>
+                        <outlet property="loginButton" destination="acr-na-tMn" id="v2o-WI-DKH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hk1-sb-bCk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +100,7 @@
         <!--Iniciar Sesión-->
         <scene sceneID="J3e-fd-52Q">
             <objects>
-                <viewController id="gcW-u3-2d2" sceneMemberID="viewController">
+                <viewController id="gcW-u3-2d2" customClass="LoginViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmE-aS-9J8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,21 +150,24 @@
                         <viewLayoutGuide key="safeArea" id="WUj-D4-NHo"/>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Sesión" id="TIP-gQ-V2A"/>
+                    <connections>
+                        <outlet property="loginButton" destination="Bgm-Mz-Jfk" id="Akr-cu-LBT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kua-6d-2eD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="60.719640179910051"/>
+            <point key="canvasLocation" x="604" y="-81"/>
         </scene>
         <!--Registro-->
         <scene sceneID="tFy-y7-AC6">
             <objects>
-                <viewController id="DBO-OA-f8k" sceneMemberID="viewController">
+                <viewController id="DBO-OA-f8k" customClass="RegisterViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n1e-jM-pmN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5O5-aZ-VHf">
-                                <rect key="frame" x="20" y="111" width="335" height="182"/>
+                                <rect key="frame" x="20" y="119.5" width="335" height="182"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srb-fa-Z6G">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
@@ -185,7 +191,7 @@
                                             <constraint firstAttribute="height" constant="50" id="677-QW-5v7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Continuar">
+                                        <state key="normal" title="Registro">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -207,10 +213,13 @@
                         <viewLayoutGuide key="safeArea" id="ihP-lb-oxu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="LCI-h5-C3f"/>
+                    <connections>
+                        <outlet property="registerButton" destination="Erh-AT-VL1" id="Uni-0w-IgD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMK-Aw-J7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="778.56071964017997"/>
+            <point key="canvasLocation" x="604" y="588"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hnm-y8-NjY">
