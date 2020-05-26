@@ -49,6 +49,8 @@ class LoginViewController: UIViewController {
         
         performSegue(withIdentifier: "showHome", sender: nil)
         
+        //Iniciar sesión aquí
+        
     }
     
 }

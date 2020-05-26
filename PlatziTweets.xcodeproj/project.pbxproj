@@ -16,6 +16,17 @@
 		42FE3D15247C3C9100175BDC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D14247C3C9100175BDC /* LoginViewController.swift */; };
 		42FE3D17247C3C9C00175BDC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D16247C3C9C00175BDC /* RegisterViewController.swift */; };
 		42FE3D1A247C49F900175BDC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FE3D19247C49F900175BDC /* Home.storyboard */; };
+		42FE3D1C247DA1F200175BDC /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D1B247DA1F200175BDC /* Endpoints.swift */; };
+		42FE3D22247DA3BA00175BDC /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D21247DA3BA00175BDC /* LoginResponse.swift */; };
+		42FE3D24247DA3C900175BDC /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D23247DA3C900175BDC /* ErrorResponse.swift */; };
+		42FE3D27247DA3E200175BDC /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D26247DA3E200175BDC /* GeneralResponse.swift */; };
+		42FE3D29247DA3F500175BDC /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D28247DA3F500175BDC /* RegisterRequest.swift */; };
+		42FE3D2B247DA40700175BDC /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D2A247DA40700175BDC /* PostRequest.swift */; };
+		42FE3D2D247DA41600175BDC /* PostRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D2C247DA41600175BDC /* PostRequestLocation.swift */; };
+		42FE3D2F247DA42800175BDC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D2E247DA42800175BDC /* LoginRequest.swift */; };
+		42FE3D31247DA48600175BDC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D30247DA48600175BDC /* User.swift */; };
+		42FE3D33247DA49300175BDC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D32247DA49300175BDC /* Post.swift */; };
+		42FE3D35247DA4A200175BDC /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D34247DA4A200175BDC /* PostLocation.swift */; };
 		480813953597F0084001FED1 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A33396985FECE9AEDF8DC63 /* Pods_PlatziTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +42,17 @@
 		42FE3D14247C3C9100175BDC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		42FE3D16247C3C9C00175BDC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		42FE3D19247C49F900175BDC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		42FE3D1B247DA1F200175BDC /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		42FE3D21247DA3BA00175BDC /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		42FE3D23247DA3C900175BDC /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		42FE3D26247DA3E200175BDC /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		42FE3D28247DA3F500175BDC /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		42FE3D2A247DA40700175BDC /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		42FE3D2C247DA41600175BDC /* PostRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestLocation.swift; sourceTree = "<group>"; };
+		42FE3D2E247DA42800175BDC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		42FE3D30247DA48600175BDC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		42FE3D32247DA49300175BDC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		42FE3D34247DA4A200175BDC /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
 		5B53A0C9F25F4D71B43BCC14 /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
 		6A33396985FECE9AEDF8DC63 /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF5FBF77CE420588BC59B8E /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +110,8 @@
 		42FE3D0D2475C78000175BDC /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				42FE3D1B247DA1F200175BDC /* Endpoints.swift */,
+				42FE3D1E247DA37000175BDC /* Models */,
 				425734DB2460D151009DD590 /* AppDelegate.swift */,
 				425734DF2460D151009DD590 /* ViewController.swift */,
 				425734E42460D156009DD590 /* Assets.xcassets */,
@@ -122,6 +146,39 @@
 				42FE3D19247C49F900175BDC /* Home.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		42FE3D1E247DA37000175BDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42FE3D1F247DA38400175BDC /* Responses */,
+				42FE3D20247DA38F00175BDC /* Request */,
+				42FE3D30247DA48600175BDC /* User.swift */,
+				42FE3D32247DA49300175BDC /* Post.swift */,
+				42FE3D34247DA4A200175BDC /* PostLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42FE3D1F247DA38400175BDC /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				42FE3D21247DA3BA00175BDC /* LoginResponse.swift */,
+				42FE3D23247DA3C900175BDC /* ErrorResponse.swift */,
+				42FE3D26247DA3E200175BDC /* GeneralResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		42FE3D20247DA38F00175BDC /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				42FE3D28247DA3F500175BDC /* RegisterRequest.swift */,
+				42FE3D2A247DA40700175BDC /* PostRequest.swift */,
+				42FE3D2C247DA41600175BDC /* PostRequestLocation.swift */,
+				42FE3D2E247DA42800175BDC /* LoginRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		A9D2D33277264E42EDF0FCAC /* Frameworks */ = {
@@ -248,11 +305,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FE3D2D247DA41600175BDC /* PostRequestLocation.swift in Sources */,
+				42FE3D2F247DA42800175BDC /* LoginRequest.swift in Sources */,
 				42FE3D15247C3C9100175BDC /* LoginViewController.swift in Sources */,
+				42FE3D2B247DA40700175BDC /* PostRequest.swift in Sources */,
+				42FE3D27247DA3E200175BDC /* GeneralResponse.swift in Sources */,
+				42FE3D29247DA3F500175BDC /* RegisterRequest.swift in Sources */,
+				42FE3D31247DA48600175BDC /* User.swift in Sources */,
 				42FE3D17247C3C9C00175BDC /* RegisterViewController.swift in Sources */,
 				42FE3D13247C3C6500175BDC /* WelcomeViewController.swift in Sources */,
+				42FE3D33247DA49300175BDC /* Post.swift in Sources */,
 				425734E02460D151009DD590 /* ViewController.swift in Sources */,
+				42FE3D1C247DA1F200175BDC /* Endpoints.swift in Sources */,
+				42FE3D35247DA4A200175BDC /* PostLocation.swift in Sources */,
 				425734DC2460D151009DD590 /* AppDelegate.swift in Sources */,
+				42FE3D22247DA3BA00175BDC /* LoginResponse.swift in Sources */,
+				42FE3D24247DA3C900175BDC /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
