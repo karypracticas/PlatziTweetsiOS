@@ -8,6 +8,8 @@
 
 import UIKit
 import NotificationBannerSwift
+import Simple_Networking //Librería para trabajar la red
+import SVProgressHUD //Librería para mostrar indicadores de carga al usuario
 
 class LoginViewController: UIViewController {
     // MARK: - Outlets
@@ -47,7 +49,30 @@ class LoginViewController: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "showHome", sender: nil)
+        //Crear request
+        let request = LoginRequest(email: email, password: password)
+        
+        //Iniciamos la carga
+        SVProgressHUD.show()
+        
+        //Llamar a librería de red
+        SN.post(endpoint: Endpoints.login, model: request) { (response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+        
+            
+            switch response {
+            case .success(let user):
+                NotificationBanner(subtitle: "Bienvenido \(user.user.names)",style: .success).show()
+                self.performSegue(withIdentifier: "showHome", sender: nil)
+            case .error(let error):
+                NotificationBanner(subtitle: "Error",style: .danger).show()
+            case .errorResult(let entity):
+                NotificationBanner(subtitle: "Error",style: .warning).show()
+                
+            }
+            
+        }
+        
+        
         
         //Iniciar sesión aquí
         

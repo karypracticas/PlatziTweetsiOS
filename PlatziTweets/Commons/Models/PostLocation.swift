@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PosLocation: Codable {
+struct PostLocation: Codable {
     let latitude: Double
     let longitude: Double
 }

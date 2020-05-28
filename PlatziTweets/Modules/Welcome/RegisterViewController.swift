@@ -7,7 +7,9 @@
 //
 
 import UIKit
-import  NotificationBannerSwift
+import NotificationBannerSwift
+import Simple_Networking
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
     // MARK: - Outlets
@@ -54,7 +56,29 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "showHome", sender: nil)
+        
+        //Hacer request
+        let request = RegisterRequest(email: email, password: password, names: names)
+        
+        //Iniciamos la carga
+             SVProgressHUD.show()
+             
+             //Llamar a librería de red
+             SN.post(endpoint: Endpoints.register, model: request) { (response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+             
+                 
+                 switch response {
+                 case .success(let user):
+                     NotificationBanner(subtitle: "Bienvenido \(user.user.names)",style: .success).show()
+                     self.performSegue(withIdentifier: "showHome", sender: nil)
+                 case .error(let error):
+                     NotificationBanner(subtitle: "Error",style: .danger).show()
+                 case .errorResult(let entity):
+                     NotificationBanner(subtitle: "Error",style: .warning).show()
+                     
+                 }
+                 
+             }
 
 }
 

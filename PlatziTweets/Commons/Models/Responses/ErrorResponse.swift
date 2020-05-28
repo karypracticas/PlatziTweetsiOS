@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct ErrorResponse {
+struct ErrorResponse: Codable {
     let error: String
 }
