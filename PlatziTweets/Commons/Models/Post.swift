@@ -10,7 +10,7 @@ import Foundation
 
 struct Post: Codable {
     let id: String
-    let author: String
+    let author: User
     let imageUrl: String
     let text: String
     let videoUrl: String

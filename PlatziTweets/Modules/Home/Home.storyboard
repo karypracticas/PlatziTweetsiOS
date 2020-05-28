@@ -11,14 +11,29 @@
         <!--Tweets-->
         <scene sceneID="Pm7-aj-lzR">
             <objects>
-                <viewController id="iWQ-45-r79" sceneMemberID="viewController">
+                <viewController id="iWQ-45-r79" customClass="HomeViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K5z-R0-ceh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eNa-BD-fmc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eNa-BD-fmc" firstAttribute="top" secondItem="K5z-R0-ceh" secondAttribute="top" id="CDb-HX-Dye"/>
+                            <constraint firstItem="eNa-BD-fmc" firstAttribute="bottom" secondItem="5v7-ON-gkH" secondAttribute="bottom" id="bl3-9j-qoG"/>
+                            <constraint firstItem="eNa-BD-fmc" firstAttribute="leading" secondItem="5v7-ON-gkH" secondAttribute="leading" id="s65-Oq-iJ0"/>
+                            <constraint firstItem="eNa-BD-fmc" firstAttribute="trailing" secondItem="5v7-ON-gkH" secondAttribute="trailing" id="zhZ-eD-QXb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5v7-ON-gkH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tweets" id="UxT-R5-vOh"/>
+                    <connections>
+                        <outlet property="tableView" destination="eNa-BD-fmc" id="sjj-ih-szO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmQ-5b-Xmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
