@@ -63,8 +63,11 @@ class LoginViewController: UIViewController {
             case .success(let user):
                 NotificationBanner(subtitle: "Bienvenido \(user.user.names)",style: .success).show()
                 self.performSegue(withIdentifier: "showHome", sender: nil)
+                SimpleNetworking.setAuthenticationHeader(prefix: "", token: user.token)
+                
             case .error(let error):
                 NotificationBanner(subtitle: "Error",style: .danger).show()
+                
             case .errorResult(let entity):
                 NotificationBanner(subtitle: "Error",style: .warning).show()
                 

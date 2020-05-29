@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet de Desarrollador" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6u-rd-YS8">
-                                <rect key="frame" x="0.0" y="173" width="198" height="23"/>
+                                <rect key="frame" x="0.0" y="173" width="531" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nob-dn-eDK">
-                                <rect key="frame" x="0.0" y="524.5" width="103" height="22"/>
+                                <rect key="frame" x="0.0" y="524.5" width="531" height="22"/>
                                 <color key="tintColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Ver Video" image="video.fill" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,6 +58,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Nob-dn-eDK" firstAttribute="leading" secondItem="5h7-Kr-ezX" secondAttribute="leading" id="a4z-fV-5cE"/>
+                            <constraint firstAttribute="trailing" secondItem="u6u-rd-YS8" secondAttribute="trailing" id="ep6-qg-dgt"/>
+                            <constraint firstItem="u6u-rd-YS8" firstAttribute="leading" secondItem="5h7-Kr-ezX" secondAttribute="leading" id="mmi-vv-I7Z"/>
+                            <constraint firstAttribute="trailing" secondItem="Nob-dn-eDK" secondAttribute="trailing" id="ubS-2i-oPB"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
