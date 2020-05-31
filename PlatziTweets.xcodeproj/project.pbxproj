@@ -14,6 +14,7 @@
 		425734E02460D151009DD590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425734DF2460D151009DD590 /* ViewController.swift */; };
 		425734E52460D156009DD590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425734E42460D156009DD590 /* Assets.xcassets */; };
 		425734E82460D156009DD590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425734E62460D156009DD590 /* LaunchScreen.storyboard */; };
+		42634C392483544B008311F9 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42634C382483544B008311F9 /* AddPostViewController.swift */; };
 		42FE3D11247846C100175BDC /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FE3D10247846C100175BDC /* Welcome.storyboard */; };
 		42FE3D13247C3C6500175BDC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D12247C3C6500175BDC /* WelcomeViewController.swift */; };
 		42FE3D15247C3C9100175BDC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE3D14247C3C9100175BDC /* LoginViewController.swift */; };
@@ -43,6 +44,7 @@
 		425734E42460D156009DD590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425734E72460D156009DD590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425734E92460D156009DD590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42634C382483544B008311F9 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		42FE3D10247846C100175BDC /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		42FE3D12247C3C6500175BDC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		42FE3D14247C3C9100175BDC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				4210930F24806F7500EE2A38 /* Cells */,
 				42FE3D19247C49F900175BDC /* Home.storyboard */,
 				4210930D24806E7000EE2A38 /* HomeViewController.swift */,
+				42634C382483544B008311F9 /* AddPostViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				42FE3D2D247DA41600175BDC /* PostRequestLocation.swift in Sources */,
 				42FE3D2F247DA42800175BDC /* LoginRequest.swift in Sources */,
 				42FE3D15247C3C9100175BDC /* LoginViewController.swift in Sources */,
+				42634C392483544B008311F9 /* AddPostViewController.swift in Sources */,
 				4210930E24806E7000EE2A38 /* HomeViewController.swift in Sources */,
 				42FE3D2B247DA40700175BDC /* PostRequest.swift in Sources */,
 				42FE3D27247DA3E200175BDC /* GeneralResponse.swift in Sources */,
