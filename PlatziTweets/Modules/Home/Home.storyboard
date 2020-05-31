@@ -24,7 +24,7 @@
                                 <rect key="frame" x="299" y="617" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="lru-mD-uRA" kind="presentation" id="G2p-Ne-Bdq"/>
+                                    <segue destination="lru-mD-uRA" kind="presentation" modalPresentationStyle="fullScreen" id="G2p-Ne-Bdq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +53,7 @@
             <objects>
                 <viewController id="lru-mD-uRA" customClass="AddPostViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URK-92-FZv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo Tweet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZO-CB-9Yp">
@@ -100,7 +100,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="APv-2x-dzq">
-                                <rect key="frame" x="0.0" y="522" width="375" height="125"/>
+                                <rect key="frame" x="0.0" y="542" width="375" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="HBh-WF-MoH"/>
                                 </constraints>
