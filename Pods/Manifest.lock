@@ -99,7 +99,7 @@ DEPENDENCIES:
   - KeychainSwift
   - Kingfisher (~> 5.0)
   - NotificationBannerSwift (~> 3.0.0)
-  - Simple-Networking (~> 0.3.2)
+  - Simple-Networking (~> 0.3.8)
   - SVProgressHUD
 
 SPEC REPOS:
@@ -155,6 +155,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 4a7b4a75fc9c8bf738b0d546707aca7ebdc87b3a
+PODFILE CHECKSUM: c1da75f836bd3404e24fd22018add1bd0419099b
 
 COCOAPODS: 1.9.1

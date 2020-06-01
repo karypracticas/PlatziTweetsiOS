@@ -14,6 +14,6 @@ struct Endpoints {
     static let register = Endpoints.domain + "/register"
     static let getPosts = Endpoints.domain + "/posts"
     static let post = Endpoints.domain + "/posts"
-    static let delete = Endpoints.domain + "/posts"
+    static let delete = Endpoints.domain + "/posts/"
 }
 

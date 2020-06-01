@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
     private func setupUI() {
         // 1. Asignar datasource
         // 2. Registar celda
+        tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId )
     }
@@ -60,10 +61,67 @@ class HomeViewController: UIViewController {
                  }
         }
     }
+    
+    //Método que se encargará de borrar el Post
+    private func deletePostAt(indexPath: IndexPath) {
+        // 1. Indicar carga al usuario
+        SVProgressHUD.show()
+        
+        // 2. Obtener Id del post que vamos a borrar
+        let postId = dataSource[indexPath.row].id
+        
+        // 3. Preparamos el endpoint para borrar
+        let endpoint = Endpoints.delete +  postId
+        
+        // 4. Consumir el servicio para borrar el post
+        SN.delete(endpoint: endpoint) { (reponse: SNResultWithEntity<GeneralResponse, ErrorResponse>) in
+            
+               //Cerramos indicador de carga
+                     SVProgressHUD.dismiss()
+                          
+                              switch reponse {
+                              case .success:
+                                 // 1. Borrar el post del datasource
+                                self.dataSource.remove(at: indexPath.row)
+                                
+                                // 2. Borrar la celda de la tabla
+                                self.tableView.deleteRows(at: [indexPath], with: .left)
+                                
+                                
+                              case .error(let error):
+                                  NotificationBanner(title: "Error",
+                                  subtitle: error.localizedDescription,style: .danger).show()
+                                  print(error.localizedDescription)
+                              case .errorResult(let entity):
+                                  NotificationBanner(title: "Error",
+                                  subtitle: entity.error,style: .warning).show()
+       
+                            }
+                        }
+                    }
+                }
+
+//MARK: UITableViewDelegate
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Borrar") { (_, _) in
+            //Aquí borramos el tweet
+            self.deletePostAt(indexPath: indexPath)
+        }
+        return [deleteAction]
+  
+    }
+    
+    //Restringir para no poder borrar tweets de otros usuarios
+    //TODO: Guardar el correo del usuario y validar contra uno real
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return dataSource[indexPath.row].author.email != "noesmimail@test.com"
+    }
+  
 }
 
 //MARK: UITableViewDataSource
-
 extension HomeViewController: UITableViewDataSource {
     // Número total de celdas
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
