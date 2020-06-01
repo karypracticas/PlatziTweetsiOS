@@ -10,6 +10,7 @@
 		4210930E24806E7000EE2A38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210930D24806E7000EE2A38 /* HomeViewController.swift */; };
 		4210931224806F9700EE2A38 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210931024806F9700EE2A38 /* TweetTableViewCell.swift */; };
 		4210931324806F9700EE2A38 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4210931124806F9700EE2A38 /* TweetTableViewCell.xib */; };
+		42569F13248597C700D06887 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42569F12248597C700D06887 /* GoogleService-Info.plist */; };
 		425734DC2460D151009DD590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425734DB2460D151009DD590 /* AppDelegate.swift */; };
 		425734E02460D151009DD590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425734DF2460D151009DD590 /* ViewController.swift */; };
 		425734E52460D156009DD590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425734E42460D156009DD590 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		4210930D24806E7000EE2A38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4210931024806F9700EE2A38 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		4210931124806F9700EE2A38 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		42569F12248597C700D06887 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		425734D82460D151009DD590 /* PlatziTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425734DB2460D151009DD590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		425734DF2460D151009DD590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				42FE3D0E2475C79200175BDC /* Modules */,
 				42FE3D0D2475C78000175BDC /* Commons */,
 				425734E92460D156009DD590 /* Info.plist */,
+				42569F12248597C700D06887 /* GoogleService-Info.plist */,
 			);
 			path = PlatziTweets;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				425734E52460D156009DD590 /* Assets.xcassets in Resources */,
 				42FE3D11247846C100175BDC /* Welcome.storyboard in Resources */,
 				42FE3D1A247C49F900175BDC /* Home.storyboard in Resources */,
+				42569F13248597C700D06887 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

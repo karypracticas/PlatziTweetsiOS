@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3dl-KH-14H">
-                                <rect key="frame" x="20" y="73" width="335" height="187"/>
+                                <rect key="frame" x="20" y="73" width="335" height="237"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KTr-1g-vcY">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
@@ -90,8 +90,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kak-3M-fVZ">
+                                        <rect key="frame" x="0.0" y="140" width="335" height="30"/>
+                                        <state key="normal" title="Abrir Cámara"/>
+                                        <connections>
+                                            <action selector="openCameraAction" destination="lru-mD-uRA" eventType="touchUpInside" id="JYe-5p-XVO"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1a-fw-sjl">
-                                        <rect key="frame" x="0.0" y="140" width="335" height="47"/>
+                                        <rect key="frame" x="0.0" y="190" width="335" height="47"/>
                                         <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="0.51856806506849318" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="6V5-tk-POU"/>
@@ -104,6 +111,12 @@
                                             <action selector="addPostAction" destination="lru-mD-uRA" eventType="touchUpInside" id="FVj-Lc-Td8"/>
                                         </connections>
                                     </button>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Sw-aa-nid">
+                                        <rect key="frame" x="0.0" y="237" width="335" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="ipP-hl-uBl"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="APv-2x-dzq">
@@ -131,6 +144,7 @@
                     </view>
                     <connections>
                         <outlet property="postTextView" destination="KTr-1g-vcY" id="CoU-2I-IaI"/>
+                        <outlet property="previewImageView" destination="5Sw-aa-nid" id="MCE-rG-YfZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dnu-jB-VxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
