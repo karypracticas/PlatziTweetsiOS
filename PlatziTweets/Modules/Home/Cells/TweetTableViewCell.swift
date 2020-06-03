@@ -34,10 +34,13 @@ class TweetTableViewCell: UITableViewCell {
         messageLabel.text = post.text
         
         if post.hasImage {
+            tweetImageView.isHidden = false
+            videoButton.isHidden = false
             //Configurar imagen, import Kingfisher
             tweetImageView.kf.setImage(with: URL(string: post.imageUrl))
         }else{
             tweetImageView.isHidden = true
+            videoButton.isHidden = true
         }
     }
     
