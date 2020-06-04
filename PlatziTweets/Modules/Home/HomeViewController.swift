@@ -10,6 +10,7 @@ import UIKit
 import Simple_Networking
 import SVProgressHUD
 import NotificationBannerSwift
+import AVKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -135,6 +136,21 @@ extension HomeViewController: UITableViewDataSource {
         if let cell =  cell as? TweetTableViewCell {
             //Configurar la celda
             cell.setupCellWith(post: dataSource[indexPath.row])
+            
+            cell.needsToShowVideo = { url in
+                //Aquí si deberíamos abrir un ViewController
+                
+                //AVPlayer es el video
+                let avPlayer = AVPlayer(url: url)
+                // AVPlayerViewController es el que levanta la pantalla con el video
+                let avPlayerController = AVPlayerViewController()
+                avPlayerController.player = avPlayer
+                //Método que presenta nuevas pantallas
+                self.present(avPlayerController, animated: true) {
+                    //Reproducir el video automáticamente cuando se abra la pantalla
+                    avPlayerController.player?.play()
+                }
+            }
             
         }
         return cell
