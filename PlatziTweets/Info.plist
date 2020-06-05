@@ -43,6 +43,12 @@
     <string>Usaremos la cámara para publicar tu Tweet. :)</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>Usaremos tu micro para publicar tu Tweet. :)</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Usaremos tu ubicación para el Tweet!</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Usaremos tu ubicación para el Tweet!</string>
+ 
+        
     
 </dict>
 </plist>

@@ -14,6 +14,7 @@ import FirebaseStorage
 import AVFoundation
 import AVKit
 import MobileCoreServices
+import CoreLocation
 
 class AddPostViewController: UIViewController {
     // MARK: - IBoutlets
@@ -74,11 +75,28 @@ class AddPostViewController: UIViewController {
     // MARK: - Properties
     private var imagePicker: UIImagePickerController?
     private var currentVideoURL: URL?
+    private var locationManager: CLLocationManager?
+    private var userLocation: CLLocation?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        requestLocation()
         videoButton.isHidden = true
         
+    }
+    
+    private func requestLocation() {
+        //Validamos que el usuario tenga el GPS activo y disponible
+        guard CLLocationManager.locationServicesEnabled() else {
+            return
+        }
+        
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager?.requestAlwaysAuthorization()
+        locationManager?.startUpdatingLocation()
     }
     
     private func openVideoCamera() {
@@ -257,5 +275,17 @@ extension AddPostViewController: UIImagePickerControllerDelegate, UINavigationCo
             videoButton.isHidden = false
             currentVideoURL = recordedVideoUrl
         }
+    }
+}
+
+// MARK: - CLLocationManagerDelegate
+extension AddPostViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //Obtenemos la última ubicación
+        guard let bestLocation = locations.last else {
+            return
+        }
+        //Ya tenemos la ubicación del usuario :)
+        userLocation = bestLocation
     }
 }
