@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" title="Tweets" id="UxT-R5-vOh">
                         <barButtonItem key="rightBarButtonItem" title="Ver Mapa" id="4c6-e0-5oI">
                             <connections>
-                                <segue destination="wH3-Dg-qhW" kind="show" id="96q-9s-ZJG"/>
+                                <segue destination="wH3-Dg-qhW" kind="show" identifier="showMap" id="96q-9s-ZJG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
